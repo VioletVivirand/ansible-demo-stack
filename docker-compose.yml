@@ -10,6 +10,7 @@ services:
     volumes:
       - ./.ssh:/root/.ssh
       - ./etc/ansible/hosts:/etc/ansible/hosts
+      - ./playbooks:/playbooks
   managed1:
     image: ansible-ubuntu-sshd:latest
     ports:
