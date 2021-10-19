@@ -8,7 +8,15 @@ services:
       - ansible
     volumes:
       - .ssh:/root/.ssh
-  managed:
+  managed1:
+    image: ansible-ubuntu:latest
+    ports:
+      - "22"
+    networks:
+      - ansible
+    volumes:
+      - .ssh:/root/.ssh
+  managed2:
     image: ansible-ubuntu:latest
     ports:
       - "22"
