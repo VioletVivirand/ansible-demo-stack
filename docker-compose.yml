@@ -1,7 +1,7 @@
 version: "3.9"  # optional since v1.27.0
 services:
   control:
-    image: ansible-ubuntu:latest
+    image: ansible-ubuntu-sshd:latest
     ports: 
       - "22"
     networks:
@@ -9,7 +9,7 @@ services:
     volumes:
       - .ssh:/root/.ssh
   managed1:
-    image: ansible-ubuntu:latest
+    image: ansible-ubuntu-sshd:latest
     ports:
       - "22"
     networks:
@@ -17,7 +17,7 @@ services:
     volumes:
       - .ssh:/root/.ssh
   managed2:
-    image: ansible-ubuntu:latest
+    image: ansible-ubuntu-sshd:latest
     ports:
       - "22"
     networks:

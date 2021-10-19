@@ -1,4 +1,5 @@
 # ansible-demo-stack
+
 A Docker Compose stack for test with Ansible, Ubuntu, and sshd installed
 
 ## Build Docker image
@@ -11,6 +12,7 @@ Or download directly from GitHub Packages Container registry:
 
 ```bash
 $ docker pull ghcr.io/violetvivirand/ansible-ubuntu-sshd:latest
+$ docker tag ghcr.io/violetvivirand/ansible-ubuntu-sshd:latest ansible-ubuntu-sshd:latest
 ```
 
 ## Generate SSH key pairs
