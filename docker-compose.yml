@@ -8,7 +8,8 @@ services:
     networks:
       - ansible
     volumes:
-      - .ssh:/root/.ssh
+      - ./.ssh:/root/.ssh
+      - ./etc/ansible/hosts:/etc/ansible/hosts
   managed1:
     image: ansible-ubuntu-sshd:latest
     ports:
