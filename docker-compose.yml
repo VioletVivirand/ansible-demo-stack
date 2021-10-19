@@ -4,6 +4,7 @@ services:
     image: ansible-ubuntu-sshd:latest
     ports: 
       - "22"
+    hostname: control
     networks:
       - ansible
     volumes:
@@ -12,6 +13,7 @@ services:
     image: ansible-ubuntu-sshd:latest
     ports:
       - "22"
+    hostname: managed1
     networks:
       - ansible
     volumes:
@@ -20,6 +22,7 @@ services:
     image: ansible-ubuntu-sshd:latest
     ports:
       - "22"
+    hostname: managed2
     networks:
       - ansible
     volumes:
